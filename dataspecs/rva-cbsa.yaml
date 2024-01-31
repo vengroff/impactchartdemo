@@ -1,0 +1,32 @@
+# This dataspec has a single group.
+!DataSpec
+dataset: ACS5
+vintage: 2020
+geography:
+  state: VA
+  county: '*'
+  tract: '*'
+  block_group: '*'
+contained_within:
+  metropolitan_statistical_area_micropolitan_statistical_area: '40060'
+# Get the leaves of the population by race group.
+# See https://api.census.gov/data/2019/acs/acs5/groups/B03002.html
+specs:
+  - !VariableList
+    variables:
+      - NAME
+      - B19013_001E  # Median household income
+      - B25119_002E  # Median household income of homeowners
+      - B25003_002E  # Total owner-occupied households
+      - B25008_002E  # Total population of owner-occupied households
+      - B25077_001E  # Median home value
+  - !Group
+    group: B03002  # Race and ethnicity
+    leaves_only: true
+    denominator: B03002_001E
+    frac_prefix: frac_
+  - !VariableList
+    # We also want two intermediate nodes, the root and Hispanic or Latino
+    variables:
+      - B03002_001E  # Total population.
+      - B03002_012E  # Hispanic or Latino regardless of race.
