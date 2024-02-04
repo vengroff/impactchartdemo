@@ -7,14 +7,14 @@ PARAMS_DIR := $(WORKING_DIR)/params
 DATASPEC_DIR := dataspecs
 
 FEATURES := \
-	frac_B03002_003E:"Fraction of Population Who Identify as Non-Hipanic or Latino White Alone" \
-	frac_B03002_004E:"Fraction of Population Who Identify as Non-Hipanic or Latino Black of African American Alone" \
-	frac_B03002_005E:"Fraction of Population Who Identify as Non-Hipanic or Latino American Indian and Alaska Native Alone" \
-	frac_B03002_006E:"Fraction of Population Who Identify as Non-Hipanic or Latino Asian Alone" \
-	frac_B03002_007E:"Fraction of Population Who Identify as Non-Hipanic or Latino Native Hawaiian and Other Pacific Islander Alone" \
-	frac_B03002_008E:"Fraction of Population Who Identify as Non-Hipanic or Latino Some Other Race Alone" \
-	frac_B03002_010E:"Fraction of Population Who Identify as Non-Hipanic or Latino Two Races Including Some Other Race" \
-	frac_B03002_011E:"Fraction of Population Who Identify as Non-Hipanic or Latino Two Races Excluding Some Other Race, and Three or More Races" \
+	frac_B03002_003E:"Fraction of Population Who Identify as Non-Hispanic or Latino White Alone" \
+	frac_B03002_004E:"Fraction of Population Who Identify as Non-Hispanic or Latino Black of African American Alone" \
+	frac_B03002_005E:"Fraction of Population Who Identify as Non-Hispanic or Latino American Indian and Alaska Native Alone" \
+	frac_B03002_006E:"Fraction of Population Who Identify as Non-Hispanic or Latino Asian Alone" \
+	frac_B03002_007E:"Fraction of Population Who Identify as Non-Hispanic or Latino Native Hawaiian and Other Pacific Islander Alone" \
+	frac_B03002_008E:"Fraction of Population Who Identify as Non-Hispanic or Latino Some Other Race Alone" \
+	frac_B03002_010E:"Fraction of Population Who Identify as Non-Hispanic or Latino Two Races Including Some Other Race" \
+	frac_B03002_011E:"Fraction of Population Who Identify as Non-Hispanic or Latino Two Races Excluding Some Other Race, and Three or More Races" \
 	frac_B03002_012E:"Fraction of Population Who Identify as Hispanic or Latino of Any Race" \
 	B19013_001E:"Median Household Income"
 	# B25119_002E:"Median Household Income of Homeowners"

@@ -9,7 +9,14 @@ readme = "README.md"
 python = "^3.11"
 censusdis = "^1.0.1"
 impactchart = "^0.3.1"
+jupyterlab = "^4.0.12"
+ipywidgets = "^8.1.1"
 
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.1.14"
+flake8 = "^7.0.0"
+black = "^24.1.0"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core"]
