@@ -21,4 +21,6 @@ and take it from there.
 
 ## Running in a hosted environment
 
-[Coming Soon]
+Run a hosted version courtesy of [mybinder.org](mybinder.org). Just click the button:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vengroff/impactchartdemo/0.1.0?labpath=Impact+Chart+Demo.ipynb)
