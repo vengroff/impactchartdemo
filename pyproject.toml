@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 censusdis = "^1.0.1"
-impactchart = "^0.3.2"
+impactchart = "^0.3.3"
 jupyterlab = "^4.0.12"
 ipywidgets = "^8.1.1"
 

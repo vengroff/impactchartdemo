@@ -1116,13 +1116,13 @@ files = [
 
 [[package]]
 name = "impactchart"
-version = "0.3.2"
+version = "0.3.3"
 description = ""
 optional = false
 python-versions = ">=3.11,<4.0"
 files = [
-    {file = "impactchart-0.3.2-py3-none-any.whl", hash = "sha256:cd147463aa1486116143cfcb780305bd4bb98b2042a03e2782314fa429b996e0"},
-    {file = "impactchart-0.3.2.tar.gz", hash = "sha256:55d568d923a543ba550f669c50d0efafdd1461ff77b52fcacfac3462807e72ef"},
+    {file = "impactchart-0.3.3-py3-none-any.whl", hash = "sha256:5040930b380c8d238057edc60b8af636de72bd924b1c4efa57f7653df8bc7291"},
+    {file = "impactchart-0.3.3.tar.gz", hash = "sha256:29be586fee9904689ca256d6bd7f16c2df39a7dc6a175263aac9096e2b2d847d"},
 ]
 
 [package.dependencies]
@@ -3786,4 +3786,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "410e6911f76cd6f85791cb357ebd2c83cb10e5f33b66a0df3b88997714e8bcf1"
+content-hash = "2d9932b17810f601ede05424e3e026716f0bf7b66f47f86239b29256610ddb2a"
