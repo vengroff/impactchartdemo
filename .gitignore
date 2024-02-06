@@ -158,8 +158,5 @@ cython_debug/
 # PyCharm
 .idea/
 
-# Generated data
-data/
-
 # Working directory
 working/
