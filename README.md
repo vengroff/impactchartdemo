@@ -16,11 +16,11 @@ pip install impactchartdemo
 jupyter-lab &
 ```
 
-This should fire up the jupyter lab server and open a brownser tap to it. From there, you can open `Housing Value.ipynb`
+This should fire up the jupyter lab server and open a browser tap to it. From there, you can open `Housing Value.ipynb`
 and take it from there.
 
 ## Running in a hosted environment
 
 Run a hosted version courtesy of [mybinder.org](mybinder.org). Just click the button:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vengroff/impactchartdemo/0.1.0?labpath=Housing+Value.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vengroff/impactchartdemo/0.1.2?labpath=Housing+Value.ipynb)
