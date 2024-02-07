@@ -23,13 +23,13 @@ def t2(X: pd.DataFrame) -> pd.Series:
 
 
 def t3(X: pd.DataFrame) -> pd.Series:
-    return pd.Series(np.zeros(len(X)), index=X.index)
+    x3 = X['x_3']
+    k = 7
+    return 200.0 * np.exp(k * ((x3 / 100.0) - 1.0))
 
 
 def t4(X: pd.DataFrame) -> pd.Series:
-    x4 = X['x_4']
-    k = 7
-    return 200.0 * np.exp(k * ((x4 / 100.0) - 1.0))
+    return pd.Series(np.zeros(len(X)), index=X.index)
 
 
 def term(x_col: str) -> Callable[[FeatureType], FeatureType]:
