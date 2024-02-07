@@ -64,7 +64,9 @@ def all_cbsas(vintage: int = 2020):
     )
 
 
-def get_data(cbsa: str, vintage: int = 2020) -> Tuple[pd.DataFrame, pd.Series, pd.Series, Dict[str, str], str]:
+def get_data(
+    cbsa: str, vintage: int = 2020
+) -> Tuple[pd.DataFrame, pd.Series, pd.Series, Dict[str, str], str]:
     """Build a data set of home value, demographic, and median income data at the block group level for a given cbsa."""
 
     states = _states_in_cbsa(cbsa, vintage=vintage)
@@ -91,20 +93,24 @@ def get_data(cbsa: str, vintage: int = 2020) -> Tuple[pd.DataFrame, pd.Series, p
     # Income is capped at $250k; higher values clipped to $250.001.
     # Home values is capped at $2MM; higher values clipped to $2,000,000.
     df_census = df_census[
-        (df_census[VARIABLE_MEDIAN_HOME_VALUE] <= 2_000_000) &
-        (df_census[FEATURE_MEDIAN_HOUSEHOLD_INCOME] <= 250_000)
-        ]
+        (df_census[VARIABLE_MEDIAN_HOME_VALUE] <= 2_000_000)
+        & (df_census[FEATURE_MEDIAN_HOUSEHOLD_INCOME] <= 250_000)
+    ]
 
     # Create fractional demographic features.
     feature_names = {}
 
     for variable, description in DEMOGRAPHIC_VARIABLES.items():
-        frac_variable = f'frac_{variable}'
-        df_census[frac_variable] = df_census[variable] / df_census[VARIABLE_TOTAL_POPULATION]
-        feature_names[frac_variable] = f'Fraction of {description}'
+        frac_variable = f"frac_{variable}"
+        df_census[frac_variable] = (
+            df_census[variable] / df_census[VARIABLE_TOTAL_POPULATION]
+        )
+        feature_names[frac_variable] = f"Fraction of {description}"
 
     # Add the median income features.
-    feature_names[FEATURE_MEDIAN_HOUSEHOLD_INCOME] = ADDITIONAL_VARIABLES[FEATURE_MEDIAN_HOUSEHOLD_INCOME]
+    feature_names[FEATURE_MEDIAN_HOUSEHOLD_INCOME] = ADDITIONAL_VARIABLES[
+        FEATURE_MEDIAN_HOUSEHOLD_INCOME
+    ]
 
     X = df_census[feature_names.keys()]
 
