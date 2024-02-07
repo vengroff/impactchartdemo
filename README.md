@@ -17,7 +17,7 @@ Once you have read through the notebook, you might want to run it live, modify i
 and see the resutls. Thanks to [mybinder.org](mybinder.org), you can do this in 
 a cloud-based hosted environment without any need to install anything.
 
-Just click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vengroff/impactchartdemo/0.1.3?labpath=Synthatic+Data.ipynb) to
+Just click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vengroff/impactchartdemo/0.1.3?labpath=Synthetic+Data.ipynb) to
 launch.
 
 ## More Background
