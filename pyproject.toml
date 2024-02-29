@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "impactchartdemo"
-version = "0.1.3"
+version = "0.1.5"
 description = ""
 authors = ["vengroff <vengroff@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-censusdis = "^1.0.1"
-impactchart = "^0.3.4"
+censusdis = "^1.1.1"
+impactchart = "^0.4.3"
 jupyterlab = "^4.0.12"
 ipywidgets = "^8.1.1"
 
