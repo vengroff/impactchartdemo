@@ -7,10 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-censusdis = "^1.1.1"
-impactchart = "^0.4.3"
-jupyterlab = "^4.0.12"
-ipywidgets = "^8.1.1"
+censusdis = "^1.1.9"
+impactchart = "^0.5.1"
+jupyterlab = "^4.2.2"
+ipywidgets = "^8.1.3"
 
 [tool.poetry.group.lint.dependencies]
 ruff = "^0.1.14"
